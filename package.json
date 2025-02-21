@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "description": "基于 VitePress 打造个人前端导航网站",
   "private": true,
-  "packageManager": "pnpm@8.14.0",
   "devDependencies": {
     "@femm/prettier": "^1.1.0",
     "@femm/tailwind-config": "^1.0.0",
