@@ -17,7 +17,7 @@ const APP_BASE_PATH = basename(process.env.GITHUB_REPOSITORY || '');
  */
 export default defineConfig({
   // 指定构建输出目录，相对于当前配置文件的路径
-  outDir: '../dist',
+  outDir: 'docs/.vitepress/dist',
   // 设置应用的基础路径，如果 APP_BASE_PATH 存在，则使用其作为基础路径，否则使用根路径
   base: APP_BASE_PATH ? `/${APP_BASE_PATH}/` : '/',
   // 设置网站的语言为中文
