@@ -13,7 +13,7 @@ export default {
     if (frontmatter.value?.layoutClass) {
       props.layout = frontmatter.value.layoutClass;
     }
-    console.log('frontmatter', frontmatter, props);
+
     return h(MyLayout, props);
   },
   enhanceApp({ app, router, siteData }: EnhanceAppContext) {

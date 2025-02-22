@@ -3,7 +3,18 @@ import DefaultTheme from 'vitepress/theme';
 const { Layout } = DefaultTheme;
 import { useData } from 'vitepress';
 const { isDark } = useData();
-import { nextTick, provide } from 'vue';
+import { nextTick, provide, watch } from 'vue';
+
+// 获取 frontmatter 中的 layoutClass
+const frontmatter = useData().frontmatter;
+let layoutClass = frontmatter.value?.layoutClass; // 获取传递的 layoutClass
+// 监听 frontmatter 的变化
+watch(
+  () => frontmatter.value?.layoutClass,
+  (newClass) => {
+    layoutClass = newClass; // 更新 layoutClass
+  }
+);
 const enableTransitions = () =>
   'startViewTransition' in document &&
   window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
@@ -38,6 +49,8 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
 </script>
 
 <template>
-  <Layout></Layout>
+  <div :class="layoutClass">
+    <Layout></Layout>
+  </div>
 </template>
 <style></style>
