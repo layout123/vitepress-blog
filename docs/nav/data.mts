@@ -64,6 +64,11 @@ export const NAV_DATA: NavData[] = [
         title: 'Beautiful.ai（PPT）',
         link: 'https://www.beautiful.ai',
       },
+      {
+        icon: 'https://picx.zhimg.com/v2-babaf83d6d4a550a1f38985ac0b7c145_r.jpg',
+        title: 'deepseek（不容小觑）',
+        link: 'https://chat.deepseek.com',
+      },
     ],
   },
   {

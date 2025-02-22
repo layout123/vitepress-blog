@@ -50,7 +50,7 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
 
 <template>
   <div :class="layoutClass">
-    <Layout></Layout>
+    <Layout v-bind="$attrs"></Layout>
   </div>
 </template>
 <style></style>
