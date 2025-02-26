@@ -5,6 +5,16 @@ export const nav: DefaultTheme.Config['nav'] = [
   { text: '前端导航', link: '/nav/' },
   { text: '踩坑记录', link: '/markdown-examples' },
   {
+    text: '面试',
+    items: [
+      { text: 'html相关', link: '/interview/html/' },
+      { text: 'css相关', link: '/interview/css/' },
+      { text: 'js相关', link: '/interview/js/' },
+      { text: 'vue相关', link: '/interview/vue/' },
+      { text: 'react相关', link: '/interview/react/' },
+    ],
+  },
+  {
     text: '学习笔记',
     items: [
       { text: 'html相关', link: '/notes/html/' },

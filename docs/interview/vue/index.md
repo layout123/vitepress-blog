@@ -7,3 +7,4 @@ hidden: true
 ## 目录
 
 - [组件通信](./communicate.md)
+- [MVVM](./mvvm.md)
