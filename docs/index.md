@@ -11,7 +11,7 @@ hero:
     alt: 社会很单纯
   actions:
     - text: 面试整理
-      link:
+      link: /interview/vue/
     - text: 前端导航
       link: /nav/
       theme: alt
